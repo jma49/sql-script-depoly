@@ -6,7 +6,7 @@ import { QueryResult } from "pg";
 import db from "../../lib/db";
 
 // 加载环境变量
-dotenv.config({ path: ".env.loval" });
+dotenv.config({ path: ".env.local" });
 
 interface ExecutionResult {
   success: boolean;
