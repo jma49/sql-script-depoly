@@ -3,7 +3,7 @@ import path from "path";
 import axios from "axios";
 import dotenv from "dotenv";
 import { QueryResult } from "pg";
-import db from "../../lib/db";
+import db from "../src/lib/db";
 
 // 加载环境变量
 dotenv.config({ path: ".env.local" });
