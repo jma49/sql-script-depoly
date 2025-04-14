@@ -1,7 +1,10 @@
-/* 
+-- NAME: 检查 Square 重复订单
+-- DESCRIPTION: 检测 Square 订单系统中最近 3000 条订单记录中的重复订单。
+
+/*
 Purpose: 检测 Square 订单系统中的重复订单
 Scope: 最近 3000 条订单记录
-Author: Jincheng
+Author: Williams
 Created: 2025/4/6
 */
 
