@@ -41,11 +41,3 @@ FROM recent_joined_orders j
 GROUP BY j.square_order_id
 HAVING COUNT(j.order_id) > 1
 LIMIT 10;
-
--- 安全保护：禁止修改操作
-DO $$
-BEGIN
-  IF current_query() LIKE '%UPDATE%' OR current_query() LIKE '%DELETE%' THEN
-    RAISE EXCEPTION 'Read-only script: 此脚本仅用于查询，禁止执行修改操作';
-  END IF;
-END $$;
