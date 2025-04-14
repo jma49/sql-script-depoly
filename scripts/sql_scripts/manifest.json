@@ -1,8 +1,0 @@
-[
-  {
-    "id": "check_square_order_duplicates",
-    "name": "检查 Square 重复订单",
-    "description": "检测 Square 订单系统中最近 3000 条记录中的重复订单。",
-    "filePath": "scripts/sql_scripts/check_square_order_duplicates.sql"
-  }
-] 
