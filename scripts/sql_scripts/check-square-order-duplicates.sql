@@ -41,4 +41,4 @@ SELECT
 FROM recent_joined_orders j
 GROUP BY j.square_order_id
 HAVING COUNT(j.order_id) > 1
-LIMIT 10;
+LIMIT 10; 
