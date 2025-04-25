@@ -1,10 +1,10 @@
--- NAME: check-square-order-duplicates
--- CN_NAME: 检查Square重复订单
--- DESCRIPTION: Detects duplicate orders in the last 3000 order records in the Square order system.
--- CN_DESCRIPTION: 检测 Square 订单系统中最近 3000 条订单记录中的重复订单。
 /*
-Purpose: Detect duplicate orders in the most recent 3000 order records in Square order system
+Name: check-square-order-duplicates
+CN_Name: 检查Square重复订单
+Description: Detect duplicate orders in the most recent 3000 order records in Square order system
+CN_Description: 检测 Square 订单系统中最近 3000 条订单记录中的重复订单。
 Scope: Most recent 3000 order records
+CN_Scope: 最近 3000 条订单记录
 Author: Williams
 Created: 2025/4/6
 */
