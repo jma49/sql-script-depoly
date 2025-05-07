@@ -19,7 +19,7 @@ WITH recent_base_orders AS (
   LIMIT 3000
 )
 SELECT 
-  square_order_id AS base_duplicate_id,
+  square_order_id AS duplicate_square_order_id,
   COUNT(*) AS duplicate_count
 FROM recent_base_orders
 GROUP BY square_order_id
@@ -36,8 +36,8 @@ WITH recent_joined_orders AS (
   LIMIT 3000
 )
 SELECT 
-  j.square_order_id AS joined_duplicate_id,
-  COUNT(j.order_id) AS id_duplicate_count
+  j.square_order_id AS duplicate_square_order_id,
+  COUNT(j.order_id) AS duplicate_count
 FROM recent_joined_orders j
 GROUP BY j.square_order_id
 HAVING COUNT(j.order_id) > 1
