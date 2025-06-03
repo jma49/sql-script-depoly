@@ -6,24 +6,22 @@ import { useState } from "react";
 const messages = {
   en: {
     title: "SQL Script Management System",
-    subtitle: "🔐 Enterprise Internal System",
-    emailHint: "Please login with @infi.us email",
+    subtitle: "🔐 Internal System",
+    emailHint: "Please login with your invited email",
     noAccount: "No account? Contact administrator for access",
     systemInfo: "System Access Information",
     inviteOnly:
       "• This system uses invitation-only access to ensure data security",
-    emailOnly: "• Only @infi.us enterprise email users are allowed",
-    contactIT: "• Contact IT department for access",
+    contactIT: "• Contact Jincheng for access",
   },
   zh: {
     title: "SQL脚本管理系统",
-    subtitle: "🔐 企业内部系统",
-    emailHint: "请使用 @infi.us 邮箱登录",
+    subtitle: "🔐 内部系统",
+    emailHint: "请使用受邀邮箱登录",
     noAccount: "没有账户？请联系管理员申请访问权限",
     systemInfo: "系统访问说明",
     inviteOnly: "• 此系统采用邀请制，确保数据安全",
-    emailOnly: "• 仅限 @infi.us 企业邮箱用户访问",
-    contactIT: "• 如需访问权限，请联系IT部门",
+    contactIT: "• 如需访问权限，请联系Jincheng",
   },
 };
 
@@ -90,7 +88,6 @@ export default function Page() {
             </h3>
             <div className="text-xs text-gray-600 space-y-1">
               <p>{t.inviteOnly}</p>
-              <p>{t.emailOnly}</p>
               <p>{t.contactIT}</p>
             </div>
           </div>
